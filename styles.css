@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* Variables */
+/* Mixins */
+/* Estructura gral*/
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Nav */
+.nav-item .nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.nav-item .nav-link:hover {
+  color: #ffe082;
+  background-color: #66BB6A;
+  transition: background-color 0.3s ease;
+}
+
+/* Tarjetas */
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Imagenes */
+.card-img-custom {
+  aspect-ratio: 16/9; /* Mantiene una relación estándar */
+  object-fit: cover;
+}
+
+.img-thumbnail {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #4e342e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilo de enlaces (sin decoración) */
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Botones */
+.btn-custom {
+  background-color: #66BB6A;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-custom:hover, .btn-custom:focus {
+  background-color: #388E3C; /* Fondo más oscuro al hacer hover */
+  color: #fff; /* Texto blanco para contraste */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Boton "Más recetas" */
+.btn-nav-hover {
+  background-color: #66BB6A;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-nav-hover:hover, .btn-nav-hover:focus {
+  background-color: #388E3C; /* Fondo más oscuro al hacer hover */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones específicas */
+.animate-title {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-nav {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-card {
+  animation: fadeIn 1s ease-out;
+  transition: transform 0.3s ease;
+}
+.animate-card:hover {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=styles.css.map */

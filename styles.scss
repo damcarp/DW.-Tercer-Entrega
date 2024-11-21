@@ -1,0 +1,146 @@
+/* Variables */
+$secondary-color: #4e342e;
+$hover-color: #ffe082;
+$hover-bg: #66BB6A;
+$hover-bg-dark: #388E3C;
+$card-shadow-color: rgba(0, 0, 0, 0.2);
+$transition-duration: 0.3s;
+
+/* Mixins */
+@mixin transition($property: all, $duration: $transition-duration) {
+  transition: $property $duration ease;
+}
+
+@mixin box-shadow($shadow: $card-shadow-color) {
+  box-shadow: 0 4px 8px $shadow;
+}
+
+/* Estructura gral*/
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Nav */
+.nav-item .nav-link {
+  color: #fff;
+  @include transition(color);
+
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-bg;
+    @include transition(background-color);
+  }
+}
+
+/* Tarjetas */
+.card {
+  @include transition(transform);
+
+  &:hover {
+    @include box-shadow($card-shadow-color);
+    transform: scale(1.02);
+    @include transition(transform);
+  }
+}
+
+/* Imagenes */
+.card-img-custom {
+  aspect-ratio: 16 / 9; /* Mantiene una relación estándar */
+  object-fit: cover;
+}
+
+.img-thumbnail {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Pie de página */
+footer {
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilo de enlaces (sin decoración) */
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Botones */
+.btn-custom {
+  background-color: $hover-bg;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  @include transition(all);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-bg-dark; /* Fondo más oscuro al hacer hover */
+    color: #fff; /* Texto blanco para contraste */
+    @include box-shadow();
+  }
+}
+
+/* Boton "Más recetas" */
+.btn-nav-hover {
+  background-color: $hover-bg;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  @include transition(all);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-bg-dark; /* Fondo más oscuro al hacer hover */
+    color: #fff;
+    @include box-shadow();
+  }
+}
+
+/* Animaciones específicas */
+.animate-title {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-nav {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-card {
+  animation: fadeIn 1s ease-out;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

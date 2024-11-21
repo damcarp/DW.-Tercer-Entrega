@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recetario con deliciosas recetas para disfrutar en cualquier ocasión. Aprende a preparar platos fáciles y sabrosos.">
+    <meta name="keywords" content="recetas, cocina, tarta de manzana, ensalada mediterránea, galletas de avena, recetas fáciles">
+    <meta name="author" content="Damiano">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recetario</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="bg-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="text-white text-decoration-none animate-title" aria-label="Ir a la página de inicio">
+                <h1 class="m-0">Recetario</h1>
+            </a>
+
+            <!-- Nav -->
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white animate-nav" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white animate-nav" href="./mas_recetas.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white animate-nav" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container py-5">
+        <h2 class="text-center mb-4 animate-fade-in">Recetas populares</h2>
+
+        <!-- Sección de tarjetas de recetas -->
+        <section class="recetas-lista">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Receta 1 -->
+                <article class="col">
+                    <div class="card h-100 animate-card">
+                        <img src="imagenes/tarta_manzana.webp" class="card-img-top img-fluid card-img-custom" alt="Tarta de manzana recién horneada">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Tarta de manzana</h5>
+                            <p class="card-text flex-grow-1">Una receta fácil y deliciosa para disfrutar en cualquier ocasión.</p>
+                            <a href="#" class="btn btn-custom animate-button mt-auto">Ver receta</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Receta 2 -->
+                <article class="col">
+                    <div class="card h-100 animate-card">
+                        <img src="imagenes/ensalada_mediterranea.jpg" class="card-img-top img-fluid card-img-custom" alt="Ensalada mediterránea con vegetales frescos">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Ensalada mediterránea</h5>
+                            <p class="card-text flex-grow-1">Una ensalada fresca con ingredientes saludables y sabrosos.</p>
+                            <a href="#" class="btn btn-custom animate-button mt-auto">Ver receta</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Receta 3 -->
+                <article class="col">
+                    <div class="card h-100 animate-card">
+                        <img src="imagenes/galletas_de_avena.jpg" class="card-img-top img-fluid card-img-custom" alt="Galletas de avena crujientes y deliciosas">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Galletas de avena</h5>
+                            <p class="card-text flex-grow-1">Ideal para acompañar con una taza de té o café.</p>
+                            <a href="#" class="btn btn-custom animate-button mt-auto">Ver receta</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Aca agregar mas recetas -->
+            </div>
+        </section>
+
+        <!-- Enlace para ver más recetas -->
+        <div class="text-center mt-4">
+            <a href="recetas.html" class="btn btn-nav-hover animate-button">Más recetas</a>
+        </div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Recetas Caseras | Todos los derechos reservados.</p>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
